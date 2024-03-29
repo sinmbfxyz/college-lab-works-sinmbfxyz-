@@ -10,6 +10,7 @@ void main(){
 	sec_largest=a[1];
 	for(i=1;i<5;i++){
 		if(a[i]>largest){
+			sec_largest=largest;
 			largest=a[i];
 		}
 	}
@@ -19,5 +20,4 @@ void main(){
 		}
 	}
 	printf("Second largest element is %d\n",sec_largest);
-	
 }
