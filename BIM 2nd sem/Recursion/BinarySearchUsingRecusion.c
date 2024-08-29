@@ -21,4 +21,16 @@ int BinarySearch(int arr[],int low, int high, int key){
 void main(){
 	int arr[]={1,2,5,9,15,17,29,50,89,100};
 	int size,res,key,low=0,high;
+	size=sizeof(arr)/sizeof(arr[0]);
+	high=size-1;
+	printf("Enter key to search: ");
+	scanf("%d",&key);
+	res=BinarySearch(arr,low,high,key);
+	if(res==-1){
+		
+		printf("%d not found in array",key);
+	}
+	else{
+		printf("%d found at index %d of array",key,res);
+	}
 }
