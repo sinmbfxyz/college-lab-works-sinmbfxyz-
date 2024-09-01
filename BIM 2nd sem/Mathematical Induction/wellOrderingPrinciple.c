@@ -19,7 +19,7 @@ int findSmallest(int arr[],int size){
 }
 
 void main(){
-	int arr[]={4,5,6,2,3,19,0,-1};
+	int arr[]={4,5,6,2,3,19,0};
 	int size=sizeof(arr)/sizeof(arr[0]);
 	int smallestElement;
 	smallestElement=findSmallest(arr,size);
