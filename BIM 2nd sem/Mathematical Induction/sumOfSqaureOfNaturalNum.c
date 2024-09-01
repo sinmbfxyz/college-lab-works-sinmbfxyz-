@@ -1,18 +1,18 @@
-// WAP to verify the formula for the sum of the first n natural numbers using the mathematical
+// WAP to verify the formula for the sum of the square of n natural numbers using the mathematical
 // induction
 
 #include<stdio.h>
 
 // Function to calculate the sum using the formula
 int sumUsingFormula(int n){
-	return (n*(n+1))/2;
+	return (n*(n+1)*((2*n)+1))/6;
 }
 
 // Function to calculate the sum using iteration
 int sumUsingIteration(int n){
 	int sum=0,i;
 	for(i=1;i<=n;i++){
-		sum+=i;
+		sum+=(i*i);
 	}
 	return sum;
 }
@@ -27,6 +27,6 @@ void main(){
 		printf("The formula and iteration yield the same result.Formula is verified");
 	}
 	else{
-		printf("There is a deviation between the formula and iteration. Verification failed");
+		printf("There is a deviation between the formula and iteration. Verificatoni failed");
 	}
 }
