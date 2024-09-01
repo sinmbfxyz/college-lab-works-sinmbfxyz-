@@ -27,6 +27,6 @@ void main(){
 		printf("The formula and iteration yield the same result.Formula is verified");
 	}
 	else{
-		printf("There is a deviation between the formula and iteration. Verificatoni failed");
+		printf("There is a deviation between the formula and iteration. Verificaton failed");
 	}
 }
