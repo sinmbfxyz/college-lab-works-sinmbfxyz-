@@ -57,4 +57,5 @@ int main(){
 	int q2=1; // True
 	int r2=0; // False
 	modus_ponens_chain(p2,q2,r2);
+	return 0;
 }
