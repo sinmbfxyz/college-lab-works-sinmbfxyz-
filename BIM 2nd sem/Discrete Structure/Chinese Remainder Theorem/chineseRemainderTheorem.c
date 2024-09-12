@@ -33,5 +33,10 @@ void main(){
 		scanf("%d",&m[i]);
 		printf("Residue a%d: ",i+1);
 		scanf("%d",&a[i]);
+		mp=mp*m[i];
+	}
+	for(i=0;i<n;i++){
+		y[i]=Inverse(M[i],m[j]);
+	}
 	}
 }
