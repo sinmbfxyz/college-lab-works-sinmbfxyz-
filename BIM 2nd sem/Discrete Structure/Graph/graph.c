@@ -2,7 +2,7 @@
 #include<conio.h>
 
 struct node {
-	int vertex;
+	int vertex;s
 	struct node*next;
 };
 
