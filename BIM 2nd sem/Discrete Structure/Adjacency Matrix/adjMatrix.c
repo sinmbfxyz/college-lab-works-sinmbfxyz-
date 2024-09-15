@@ -6,7 +6,7 @@
 int N,M;
 
 // Function to create Adjacency Matrix
-void createAdjMatrix(int Adj[][N+1], int arr[](2)){
+void createAdjMatrix(int Adj[][N+1], int arr[][2]){
 	// Initialize all value to this Adjacency list to zero
 	for(int i=0;i<N+1;i++){
 		for(int j=0;j<N+1;j++){
@@ -34,4 +34,21 @@ void printAdjMatrix(int Adj[][N+1]){
 		}
 		printf("\n");
 	}
+}
+
+// Driver Code
+int main(){
+	// Number of vertices
+	N=5;
+	// Given Edges
+	int arr[][2]={{1,2},{2,3},{4,5},{1,5}};
+	// Number of Edges
+	M=sizeof(arr)/sizeof(arr[0]);
+	// For adjacency Matrix
+	int Adj[N+1][N+1];
+	// Function call to create Adjacency Matrix
+	createAdjMatrix(Adj,arr);
+	// Print Adjacency Matrix
+	printAdjMatrix(Adj);
+	return 0;
 }
