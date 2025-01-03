@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        h1{
+            text-align:center;
+        }
+        .form {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border:2px solid black;
+            padding:15px;
+            border-radius:5px;
+        }
+
+        .input-container {
+            margin-bottom: 8px;
+        }
+
+        .credentials {
+            width: 100%;
+            box-sizing:border-box;
+        }
+
+
+        button {
+            width: 100%;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login Page</h1>
+    <form method="post" action="" class="form">
+        <div class="input-container">
+            <label for="name">Name: </label>
+            <input type="text" name="name" class="credentials">
+        </div>
+
+        <div class="input-container">
+            <label for="email">Email: </label>
+            <input type="email" name="email" class="credentials">
+        </div>
+
+        <div class="input-container">
+            <label for="password">Password: </label>
+            <input type="password" name="password"class="credentials">
+        </div>
+
+        <div class="input-container">
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </div>
+
+        <div class="input-container">
+            <label for="hobbies">Hobbies: </label><br>
+            <input type="checkbox" id="late" value="late">Late coming<br>
+            <input type="checkbox" id="gossip" value="gossip">Gossiping<br>
+            <input type="checkbox" id="assignment" value="assignment">No assignment<br>
+            <input type="checkbox" id="eating" value="eating">Eating<br>
+        </div>
+
+        <div class="input-container">
+            <label for="country">Country: </label>
+            <select name="country">
+                <option value="Nepal" selected>Nepal</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
